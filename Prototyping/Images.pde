@@ -23,14 +23,14 @@ float imageDivHeight - appHeight*4/5
 //Image Aspect Ratio Vars and Algorithm //<>//
 //Directory or Pathway, Concatenation
 String upArrow = "../../;
-String folder - "Images";
+String folder - "Images Folder";
 String bicycle - "bicycle";
 String fileExtensionJPG - ".jpg";
 String ImagePathway1 - upArrow + folder+ bicycle +fileExtensionJPG;
 //println("Bicycle Pathway:",imagePathway1);
 //Image Loading Aspect Ratio
 //
-PImage errorImage = loadImage (error)
+PImage errorImage = loadImage ("error.png");
 PImage image1 - loadImage( ImagePathway1);
 if (image1 == null ) {
 println("NullPointerException on Image ... Spelling MIstake with Concatenation") ;
@@ -73,5 +73,6 @@ rect( ImageDivX, imageDivY, imageDivWidth, imageDivHeight) ;
 image(image1, imageDivX, imageDivY, imageWidthAdjusted, ImageHeightAdjusted );
 //
 //End Program
+
 
 
