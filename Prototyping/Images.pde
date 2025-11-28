@@ -29,10 +29,18 @@ String fileExtensionJPG - ".jpg";
 String ImagePathway1 - upArrow + folder+ bicycle +fileExtensionJPG;
 //println("Bicycle Pathway:",imagePathway1);
 //Image Loading Aspect Ratio
+//
+PImage errorImage = loadImage (error)
 PImage image1 - loadImage( ImagePathway1);
+if (image1 == null ) {
+println("NullPointerException on Image ... Spelling MIstake with Concatenation") ;
+image1 = errorImage;
+exit(); //handled whenever the computer uses this part or Memory
+}
+Demonstrates alternateway to load without a pathway 
 int imageWidth1 - 860; //Hardcoded
 int ImageHeight1 - 529; //Harcorded
-// Aspect Ratio 
+//Aspect Ratio
 float imageAspectRatio_GreaterOne - ( imageWidth1 >- imageHeight1) ? imageWidth1/imageHeight1 : imageHeight/imageWidth1 ; //Ternary Operator
 //ERROR, int populating,float: truncating-adding zeros,casting
 /* Line Notes
@@ -46,32 +54,24 @@ float imageAspectRatio_GreaterOne - ( imageWidth1 >- imageHeight1) ? imageWidth1
 //println("After casting added, Aspect Ratio >1:", imageAspectRatio_Greater);
 //Algorithm Decisions (choice) 
 float imageWidthAdjusted - imageDivWidth;
-float imageHeightAdjusted - (imageWidth1 >-imageDivWidth) ? imageWidthAdjusted1 / image1AspectRatio_GreaterOne : imageWidthAdjusted1 + imageAspectRatio_GreaterOne; //Ternary Operator
-
-
-
-,
-/*
-ImageWidth1
-ImageDIvwidth
-ImageHeight1
-ImageDivHeight
-ImageDivWidth, ImageDivHeight
-/*
-//if () {} else {} //End IF Aspect Ratio
-float image1AspectRatio_GreaterOne = ( imageWidth1 >= imageHeight1 ) ? float(imageWidth1)/float(imageHeight1) : float(imageHeight1)/float(imageWidth1) ; //Ternary Operator
-float imageWidthAdjusted - imageDivWidth1 >- imageDivWidth) ? imageWidthAdjusted1 +image1AspectRatio_GreaterOne : imageWidthAdjusted1/ imageAspectRatio_GreaterOne ; //Ternary Operator
-if( imageHeightAdjusted > imageDivHeight )
-println("Image doesnt  for,  program ended ... fatal flaw, must be solved... Image doesnt show.";
-exit();
- //
-)
+float imageHeightAdjusted1 = ( imageWidth1 >= imageDivWidth ) ? imageWidthAdjusted1 * image1AspectRatio_GreaterOne : imageWidthAdjusted1 / image1AspectRatio_GreaterOne ; //Ternary Operator
+if (imageHeightAdjusted1 > imageDivHeight ) {
+  println("Image doesn't fit, program ended ... Fatal Flaw, must be solved ... Image doesn't show.");
+  //exit();
+ while ( imageHeightAdjusted1>imageDivHeight ) {
+    imageWidthAdjusted1 *= 0.99;
+    imageHeightAdjusted1 = imageWidthAdjusted1/image1AspectRatio_GreaterOne;
+    //println("Inspection of percent decrase:", imageWidthAdjusted1, imageHeightAdjusted1, imageDivHeight);
+ }
+  //
+}
 //
 //DIV
 rect( ImageDivX, imageDivY, imageDivWidth, imageDivHeight) ;
 //
-image( image1, imageDivX, imageDivY, imageDivWidth, imageDIvHeight);
-//image(image1, imageDivX, imageDivY, imageWidthAdjusted, ImageHeightAdjusted );
+//image( image1, imageDivX, imageDivY, imageDivWidth, imageDIvHeight);
+image(image1, imageDivX, imageDivY, imageWidthAdjusted, ImageHeightAdjusted );
 //
 //End Program
+
 
