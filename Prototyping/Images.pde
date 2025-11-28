@@ -62,7 +62,7 @@ ImageDivWidth, ImageDivHeight
 float image1AspectRatio_GreaterOne = ( imageWidth1 >= imageHeight1 ) ? float(imageWidth1)/float(imageHeight1) : float(imageHeight1)/float(imageWidth1) ; //Ternary Operator
 float imageWidthAdjusted - imageDivWidth1 >- imageDivWidth) ? imageWidthAdjusted1 +image1AspectRatio_GreaterOne : imageWidthAdjusted1/ imageAspectRatio_GreaterOne ; //Ternary Operator
 if( imageHeightAdjusted > imageDivHeight )
-println("Image doesnt  fir,  program ended ... fatal flaw, must be solved... Image doesnt show.";
+println("Image doesnt  for,  program ended ... fatal flaw, must be solved... Image doesnt show.";
 exit();
  //
 )
@@ -74,3 +74,4 @@ image( image1, imageDivX, imageDivY, imageDivWidth, imageDIvHeight);
 //image(image1, imageDivX, imageDivY, imageWidthAdjusted, ImageHeightAdjusted );
 //
 //End Program
+
