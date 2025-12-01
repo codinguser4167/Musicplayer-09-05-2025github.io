@@ -61,7 +61,7 @@ if (imageHeightAdjusted1 > imageDivHeight ) {
  while ( imageHeightAdjusted1>imageDivHeight ) {
     imageWidthAdjusted1 *= 0.99;
     imageHeightAdjusted1 = imageWidthAdjusted1/image1AspectRatio_GreaterOne;
-    //println("Inspection of percent decrase:", imageWidthAdjusted1, imageHeightAdjusted1, imageDivHeight);
+    //println("Inspection of percent decrease:", imageWidthAdjusted1, imageHeightAdjusted1, imageDivHeight);
  }
   //
 }
@@ -73,6 +73,7 @@ rect( ImageDivX, imageDivY, imageDivWidth, imageDivHeight) ;
 image(image1, imageDivX, imageDivY, imageWidthAdjusted, ImageHeightAdjusted );
 //
 //End Program
+
 
 
 
