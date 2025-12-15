@@ -12,10 +12,10 @@ int appHeight - displayHeight; //height
 //println ("t\t\t\tFullscreen, displayWidth:\t"+display
 //
 //Population
-float imageDivX - appWidth*1.0/4;
-float imageDivY - appWidth*1.0/10;
-float imageDivWidth - appWidth*1.0/2
-float imageDivHeight - appHeight*4.0/5
+float imageDivX - appWidth*2.0/8;
+float imageDivY - appWidth*2.0/20;
+float imageDivWidth - appWidth*2.0/4
+float imageDivHeight - appHeight*8.0/10
 //
 //Image Aspect Ratio Vars & Algorithm
 //Directory or Pathway, Concatenation
@@ -73,6 +73,7 @@ rect( ImageDivX, imageDivY, imageDivWidth, imageDivHeight) ;
 image(image1, imageDivX, imageDivY, imageWidthAdjusted, ImageHeightAdjusted );
 //
 //End Program
+
 
 
 
